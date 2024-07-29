@@ -2,6 +2,28 @@
   text-align: center;
 }
 
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 5px solid black;
+  width: 306px;
+  height: 306px;
+  box-sizing: border-box;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(230, 119, 188);
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,6 +54,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
